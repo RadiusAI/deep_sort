@@ -196,7 +196,7 @@ def run(sequence_dir, detection_file, output_file, min_confidence,
                 continue
             bbox = track.to_tlwh()
             results.append([
-                frame_idx, track.track_id, bbox[0], bbox[1], bbox[2], bbox[3]])
+                frame_idx, track.track_num, bbox[0], bbox[1], bbox[2], bbox[3]])
 
     # Run tracker.
     if display:
